@@ -1,4 +1,4 @@
-read -p "Enter a commit message: " message
+read -p "Enter a commit message: > " message
 
 git add . ; git commit -am "$message"
 
