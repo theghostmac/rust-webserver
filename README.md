@@ -1,4 +1,7 @@
 # Rust Web Server (rust-webserver)
+---
+🚩Paused because Rust standard library doesn't support HTTP.
+---
 This is a basic implementation of a web server using Rust programming language. 
 The purpose of this project is for me to demonstrate I can build a simple web 
 server without relying on any Rust frameworks. 
