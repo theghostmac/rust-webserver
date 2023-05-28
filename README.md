@@ -5,6 +5,33 @@ server without relying on any Rust frameworks.
 It serves as a starting point for understanding the fundamentals 
 of building a file upload and management service in Rust.
 
+## Architecture
+
+        ┌─────────────┐          ┌─────────────┐          ┌───────────────┐
+        │   Client    │          │   Server    │          │   Database    │
+        └──────┬──────┘          └──────┬──────┘          └──────┬────────┘
+               │                         │                         │
+               │  HTTP requests           │                         │
+               ├─────────────────────────►                         │
+               │                         │                         │
+               │  HTTP responses          │                         │
+               ◄─────────────────────────┤                         │
+               │                         │                         │
+               │                         │                         │
+               │                         ▼                         │
+        ┌─────────────┐          ┌─────────────┐          ┌───────────────┐
+        │ Controllers │          │   Services  │          │  Repository   │
+        └──────┬──────┘          └──────┬──────┘          └──────┬────────┘
+               │                         │                         │
+               │  Invoke services        │                         │
+               ├─────────────────────────►                         │
+               │                         │                         │
+               │                         ▼                         │
+        ┌─────────────┐          ┌─────────────┐          ┌───────────────┐
+        │   Models    │          │   Services  │          │   Database    │
+        └─────────────┘          └─────────────┘          └───────────────┘
+
+
 ## Current Features
 
 - HTTP server capable of handling GET requests
