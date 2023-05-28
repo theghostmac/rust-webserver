@@ -10,7 +10,7 @@ of building a file upload and management service in Rust.
 - HTTP server capable of handling GET requests
 - Static file serving
 - Minimal dependencies
-- Extensible and customizable
+- Extensible and customizable `cargo.toml` file
 
 ## Future Features
 ⚠️ See [Changelog file](CHANGELOG.md).
@@ -26,7 +26,7 @@ To get started with the Rust Web Server, follow these steps:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/rust-webserver.git
+   git clone https://github.com/theghostmac/rust-webserver.git
    ```
 
 2. Change to the project directory:
@@ -52,7 +52,7 @@ To get started with the Rust Web Server, follow these steps:
    ```
    http://localhost:8000
    ```
-
+   Or if you use a Jetbrains IDE, click the Play ▶️ button on the [http](check.http) file.
    The server is now running, and you should see a simple "Hello, World!" message in your browser.
 
 ## Configuration
