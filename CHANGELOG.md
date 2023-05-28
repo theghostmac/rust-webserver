@@ -4,18 +4,21 @@ All notable changes to the Rust Web Server project will be documented in this fi
 
 ## [Unreleased]
 
-### Added
+### Add
 
 - CRUD functionality for managing files
 - File upload feature
 - File management endpoints
 - Additional routes for handling file operations
 
-### Changed
+### Changes to make
 
-- Updated the server to support CRUD operations
-- Refactored code to accommodate file upload and management
-- Improved error handling and response handling
+- Update the server to support CRUD operations
+- Refactor code to accommodate file upload and management
+- Rename the project to RFX
+- Improve error handling and response handling
+- Create a cli using CLAP that allows user use RFX from the terminal
+- Create a release tag for RFX
 
 ## [0.1.0] - 2023-05-28
 
