@@ -1,8 +1,5 @@
+read -p "Enter a commit message: " message
 
+git add . ; git commit -am "$message"
 
-git init
-git add .
-git commit -m " 🧑🏼‍🍳first commit"
-git branch -M master
-git remote add origin https://github.com/theghostmac/rust-webserver.git
-git push -u origin master
+git push
