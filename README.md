@@ -8,7 +8,6 @@ of building a file upload and management service in Rust.
 ## Current Features
 
 - HTTP server capable of handling GET requests
-- Static file serving
 - Minimal dependencies
 - Extensible and customizable `cargo.toml` file
 
