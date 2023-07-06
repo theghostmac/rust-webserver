@@ -1,5 +1,0 @@
-# Configuration for the Rust Web Server.
-# Edit this to specify your port and preferred directory for static assets.
-
-port = 8080
-root_directory = "public"
